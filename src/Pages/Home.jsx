@@ -23,12 +23,12 @@ import wonderchef from '../assets/img/featureimg/wonderchef.webp';
 // pipvideo
 import philipsvideo from '../assets/pipvideo/philips.mp4';
 import boAt from '../assets/pipvideo/boAt.mp4';
-import Wonderchefvid from '../assets/pipvideo/Wonderchef.mp4';
-import Boult from '../assets/pipvideo/Boult.mp4';
-import Lifelong from '../assets/pipvideo/Lifelong.mp4';
-import Ambrane from '../assets/pipvideo/Ambrane.mp4';
-import Bombay from '../assets/pipvideo/Bombay.mp4';
-import ProductCard from '../components/Productcard';
+import Wonderchefvid from '../assets/pipvideo/wonderchef.mp4';
+import Boult from '../assets/pipvideo/boult.mp4';
+import Lifelong from '../assets/pipvideo/lifelong.mp4';
+import Ambrane from '../assets/pipvideo/ambrane.mp4';
+import Bombay from '../assets/pipvideo/bombay.mp4';
+import ProductCard from '../components/productCard';
 
 // product
 import pigiontoster from '../assets/img/product/pigiontoster.webp';
