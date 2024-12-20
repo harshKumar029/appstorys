@@ -2,7 +2,7 @@ import React from 'react';
 
 import home from '../assets/icons/home.svg';
 import heart from '../assets/icons/heart.svg';
-import cart from '../assets/icons/cart.svg';
+import cart from '../assets/icons/Cart.svg';
 import user from '../assets/icons/user.svg';
 
 const BottomNavigationBar = () => {
