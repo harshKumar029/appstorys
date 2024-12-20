@@ -28,7 +28,7 @@ import Boult from '../assets/pipvideo/boult.mp4';
 import Lifelong from '../assets/pipvideo/lifelong.mp4';
 import Ambrane from '../assets/pipvideo/ambrane.mp4';
 import Bombay from '../assets/pipvideo/bombay.mp4';
-import ProductCard from '../components/productCard';
+import ProductCard from '../components/ProductCard';
 
 // product
 import pigiontoster from '../assets/img/product/pigiontoster.webp';
