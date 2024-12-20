@@ -3,33 +3,22 @@ import React, { useRef } from 'react';
 const FeatureProductCard = ({ product }) => {
   const hiddenVideoRef = useRef(null); // Hidden video reference for PiP
 
-  const logPiPStatus = () => {
-    console.log("Picture-in-Picture API Supported:", document.pictureInPictureEnabled); // Check if PiP is enabled
-    console.log("Current PiP Element:", document.pictureInPictureElement); // Check if a video is in PiP mode
-  };
-
   const handleImageClick = async () => {
-    logPiPStatus(); // Log PiP status
 
     // Ensure PiP is supported and the hidden video is available
     if (document.pictureInPictureEnabled && hiddenVideoRef.current) {
       try {
         if (document.pictureInPictureElement) {
-          console.log("Exiting Picture-in-Picture...");
           await document.exitPictureInPicture(); // Exit PiP if already in PiP
         } else {
-          console.log("Entering Picture-in-Picture...");
-
           // Autoplay the video before requesting PiP
           await hiddenVideoRef.current.play();
           await hiddenVideoRef.current.requestPictureInPicture(); // Request PiP mode for the video
         }
       } catch (error) {
-        console.error('Error with PiP:', error); // Log any error
+        console.error('Error with PiP:', error);
       }
-    } else {
-      console.log('PiP is not supported in this browser or the video is unavailable.');
-    }
+    } 
   };
 
   return (
